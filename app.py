@@ -6,7 +6,7 @@ from flask import jsonify
 app = Flask(__name__)
 
 
-@app.route('/')
+@app.route('/api')
 def index():
     with open('static/banlist.json', 'r') as fp:
         payload = json.load(fp)
